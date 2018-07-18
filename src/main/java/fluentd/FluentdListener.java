@@ -78,9 +78,9 @@ public class FluentdListener implements EventListener {
         if(queryCompletedEvent.getContext().getSchema().isPresent()) {
             event.put("schema", queryCompletedEvent.getContext().getSchema().get());
         }
-        if(queryCompletedEvent.getContext().getResourceGroupName().isPresent()) {
-            event.put("resourceGroupName", queryCompletedEvent.getContext().getResourceGroupName().get());
-        }
+//        if(queryCompletedEvent.getContext().getResourceGroupName().isPresent()) {
+//            event.put("resourceGroupName", queryCompletedEvent.getContext().getResourceGroupName().get());
+//        }
 
         // QueryFailureInfo
         if(queryCompletedEvent.getFailureInfo().isPresent()) {
