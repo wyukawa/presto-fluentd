@@ -48,6 +48,10 @@ public class FluentdListener implements EventListener {
         event.put("peakUserMemoryBytes", queryCompletedEvent.getStatistics().getPeakUserMemoryBytes());
         event.put("totalBytes", queryCompletedEvent.getStatistics().getTotalBytes());
         event.put("totalRows", queryCompletedEvent.getStatistics().getTotalRows());
+        event.put("outputBytes", queryCompletedEvent.getStatistics().getOutputBytes());
+        event.put("outputRows", queryCompletedEvent.getStatistics().getOutputRows());
+        event.put("writtenBytes", queryCompletedEvent.getStatistics().getWrittenBytes());
+        event.put("writtenRows", queryCompletedEvent.getStatistics().getWrittenRows());
         event.put("cumulativeMemory", queryCompletedEvent.getStatistics().getCumulativeMemory());
         event.put("completedSplits", queryCompletedEvent.getStatistics().getCompletedSplits());
 
