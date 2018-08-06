@@ -6,14 +6,14 @@
 
     <groupId>fluentd</groupId>
     <artifactId>presto-fluentd</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
 
     <dependencies>
 
         <dependency>
             <groupId>com.facebook.presto</groupId>
             <artifactId>presto-spi</artifactId>
-            <version>0.194</version>
+            <version>0.207</version>
         </dependency>
 
         <dependency>
