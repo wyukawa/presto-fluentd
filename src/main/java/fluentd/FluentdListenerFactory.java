@@ -1,7 +1,7 @@
 package fluentd;
 
-import com.facebook.presto.spi.eventlistener.EventListener;
-import com.facebook.presto.spi.eventlistener.EventListenerFactory;
+import io.prestosql.spi.eventlistener.EventListener;
+import io.prestosql.spi.eventlistener.EventListenerFactory;
 import org.komamitsu.fluency.Fluency;
 
 import java.io.IOException;

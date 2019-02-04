@@ -1,7 +1,7 @@
 package fluentd;
 
-import com.facebook.presto.spi.Plugin;
-import com.facebook.presto.spi.eventlistener.EventListenerFactory;
+import io.prestosql.spi.Plugin;
+import io.prestosql.spi.eventlistener.EventListenerFactory;
 import com.google.common.collect.ImmutableList;
 
 public class FluentdPlugin implements Plugin {

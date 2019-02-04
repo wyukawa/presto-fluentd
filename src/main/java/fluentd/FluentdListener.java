@@ -1,8 +1,8 @@
 package fluentd;
 
-import com.facebook.presto.spi.eventlistener.EventListener;
-import com.facebook.presto.spi.eventlistener.QueryCompletedEvent;
-import com.facebook.presto.spi.eventlistener.QueryFailureInfo;
+import io.prestosql.spi.eventlistener.EventListener;
+import io.prestosql.spi.eventlistener.QueryCompletedEvent;
+import io.prestosql.spi.eventlistener.QueryFailureInfo;
 import io.airlift.log.Logger;
 import org.komamitsu.fluency.Fluency;
 
