@@ -6,14 +6,14 @@
 
     <groupId>fluentd</groupId>
     <artifactId>presto-fluentd</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 
     <dependencies>
 
         <dependency>
             <groupId>io.prestosql</groupId>
             <artifactId>presto-spi</artifactId>
-            <version>301</version>
+            <version>318</version>
         </dependency>
 
         <dependency>

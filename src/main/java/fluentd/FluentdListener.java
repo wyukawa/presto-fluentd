@@ -41,9 +41,6 @@ public class FluentdListener implements EventListener {
         if(queryCompletedEvent.getStatistics().getAnalysisTime().isPresent()) {
             event.put("analysisTime", queryCompletedEvent.getStatistics().getAnalysisTime().get().toMillis());
         }
-        if(queryCompletedEvent.getStatistics().getDistributedPlanningTime().isPresent()) {
-            event.put("distributedPlanningTime", queryCompletedEvent.getStatistics().getDistributedPlanningTime().get().toMillis());
-        }
         event.put("peakTotalNonRevocableMemoryBytes", queryCompletedEvent.getStatistics().getPeakTotalNonRevocableMemoryBytes());
         event.put("peakUserMemoryBytes", queryCompletedEvent.getStatistics().getPeakUserMemoryBytes());
         event.put("totalBytes", queryCompletedEvent.getStatistics().getTotalBytes());
